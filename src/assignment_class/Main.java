@@ -34,6 +34,7 @@ public class Main {
         mytaxi1.plusPassenger(2, "서울역", 2);
         mytaxi1.changeFuel(-80);
         mytaxi1.paid();
+        mytaxi1.plusPassenger(5);
 //        mytaxi1.plusPassenger(5, "서울역", 2);
         mytaxi1.plusPassenger(3, "구로디지털단지역", 12);
         mytaxi1.paid();
