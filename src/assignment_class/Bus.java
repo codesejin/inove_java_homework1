@@ -9,6 +9,10 @@ public class Bus {
     int currentVelocity;
     String status = "운행";
 
+    Bus (int busNum) {
+        this.busNum = busNum; // 생성자
+    }
+
     public void printBusInfo() {
         System.out.println("=== Bus Info ===");
         System.out.println("busNum = " + busNum);
