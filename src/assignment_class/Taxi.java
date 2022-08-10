@@ -11,6 +11,9 @@ public class Taxi {
     String status = "일반";
     int totalpaid;
 
+    Taxi (int taxiNum) {
+        this.taxiNum = taxiNum; // 생성자
+    }
     //택시상태
     public void taxiInfo () {
         System.out.println("현재 택시의 주유량은 " + currentFuel + "입니다.");

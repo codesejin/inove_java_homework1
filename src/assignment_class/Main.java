@@ -22,11 +22,9 @@ public class Main {
         mybus1.changeFuel(-55);
 
         System.out.println("[     택시 시나리오     ]");
-        Taxi mytaxi1 = new Taxi();
-        Taxi mytaxi2 = new Taxi();
+        Taxi mytaxi1 = new Taxi(1111);
+        Taxi mytaxi2 = new Taxi(2222);
 
-        mytaxi1.taxiNum = 1234;
-        mytaxi2.taxiNum = 5678;
         System.out.println("첫 번째 택시 고유 번호는 "+mytaxi1.taxiNum+"입니다.");
         System.out.println("두 번째 택시 고유 번호는 "+mytaxi2.taxiNum+"입니다.");
 
