@@ -1,14 +1,15 @@
 package assignment_class;
 
 public class PublicTransprort {
-
+    int uniqueNum;
     int currentFuel = 100;
     int currentVelocity = 0;
     int chagneVelocity;
     int maxPassenger;
     int price;
     PublicTransprort() {}
-    PublicTransprort(int currentFuel,int maxPassenger, int price, int currentVelocity, int chagneVelocity) {
+    PublicTransprort(int uniqueNum, int currentFuel,int maxPassenger, int price, int currentVelocity, int chagneVelocity) {
+        this.uniqueNum = uniqueNum;
         this.currentFuel = currentFuel;
         this.maxPassenger = maxPassenger;
         this.price = price;

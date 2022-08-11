@@ -1,17 +1,19 @@
 package assignment_class;
 
 public class Taxi extends PublicTransprort{
-//    int maxPassenger = 4;
     int currentPassenger;
     int perprice = 1000;
-    int taxiNum;
-//    int currentFuel = 100;
     String status = "일반";
     int totalpaid;
-
-    Taxi (int taxiNum) {
-        this.taxiNum = taxiNum; // 생성자
+    Taxi(int uniqueNum, int currentFuel,int maxPassenger, int price, int currentVelocity, int chagneVelocity){
+        super(uniqueNum,
+                currentFuel,
+                maxPassenger,
+                price,
+                currentVelocity,
+                chagneVelocity);
     }
+
     //택시상태
     public void taxiInfo () {
         System.out.println("현재 택시의 주유량은 " + currentFuel + "입니다.");
@@ -59,8 +61,6 @@ public class Taxi extends PublicTransprort{
 
         System.out.println("현재 택시의 상태는 " + status + "입니다.");
     }
-
-
 
     // 주유량 변경
     public void changeFuel(int gas ) {
