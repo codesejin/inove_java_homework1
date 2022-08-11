@@ -3,15 +3,15 @@ package assignment_class;
 public class Taxi extends PublicTransprort{
     int currentPassenger;
     int perprice = 1000;
-    String status = "일반";
     int totalpaid;
-    Taxi(int uniqueNum, int currentFuel,int maxPassenger, int price, int currentVelocity, int chagneVelocity){
+    Taxi(int uniqueNum, int currentFuel,int maxPassenger, int price, int currentVelocity, int chagneVelocity, String status){
         super(uniqueNum,
                 currentFuel,
                 maxPassenger,
                 price,
                 currentVelocity,
-                chagneVelocity);
+                chagneVelocity,
+                status);
     }
 
     //택시상태
@@ -45,9 +45,7 @@ public class Taxi extends PublicTransprort{
         } else {
             currentPassenger -= passenger;
         }
-
         if (currentPassenger <= maxPassenger) {
-//            status = "운행 중";
             System.out.println("탑승 승객 수는 " + passenger + "명 입니다.");
             System.out.println("잔여 승객 수는 " + (maxPassenger - currentPassenger) + "명 입니다.");
             System.out.println("기본 요금은 " + price + "원 입니다.");
@@ -78,7 +76,6 @@ public class Taxi extends PublicTransprort{
         System.out.println("현재 상태는 " + status + "입니다.");
 
     }
-
     public void paid () {
         totalpaid += (price + (perprice));
         System.out.println("==== 요금 결제 ====");

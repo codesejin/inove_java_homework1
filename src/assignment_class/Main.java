@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("[     버스 시나리오     ]");
         // 객체 생성 시 데이터를 바로 입력 받음
-        Bus mybus1 = new Bus(1234, 100, 30, 1000, 0, 0);
-        Bus mybus2 = new Bus(5678, 100, 30, 1000, 0, 0);
+        Bus mybus1 = new Bus(1234, 100, 30, 1000, 0, 0,"운행");
+        Bus mybus2 = new Bus(5678, 100, 30, 1000, 0, 0,"운행");
 
         System.out.println("첫 번째 버스 고유 번호는 "+mybus1.uniqueNum+"입니다.");
         System.out.println("두 번째 버스 고유 번호는 "+mybus2.uniqueNum+"입니다.");
@@ -23,8 +23,8 @@ public class Main {
 
         System.out.println();
         System.out.println("[     택시 시나리오     ]");
-        Taxi mytaxi1 = new Taxi(1111, 100, 4, 3000, 0, 0);
-        Taxi mytaxi2 = new Taxi(2222, 100, 4, 3000, 0, 0);
+        Taxi mytaxi1 = new Taxi(1111, 100, 4, 3000, 0, 0, "일반");
+        Taxi mytaxi2 = new Taxi(2222, 100, 4, 3000, 0, 0, "일반");
 
         System.out.println("첫 번째 택시 고유 번호는 "+mytaxi1.uniqueNum+"입니다.");
         System.out.println("두 번째 택시 고유 번호는 "+mytaxi2.uniqueNum+"입니다.");

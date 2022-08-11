@@ -3,39 +3,15 @@ package assignment_class;
 public class Bus extends PublicTransprort {
     int currentPassenger;
 
-    int currentVelocity;
-    String status = "운행";
-
-    Bus(int uniqueNum, int currentFuel, int maxPassenger, int price, int currentVelocity, int chagneVelocity) {
+    Bus(int uniqueNum, int currentFuel, int maxPassenger, int price, int currentVelocity, int chagneVelocity,String status) {
         super(uniqueNum,
                 currentFuel,
                 maxPassenger,
                 price,
                 currentVelocity,
-                chagneVelocity);
-        this.currentPassenger = currentPassenger;
-        this.currentVelocity = currentVelocity;
+                chagneVelocity,
+                status);
     }
-
-    //    public void printBusInfo() {
-//        System.out.println("=== Bus Info ===");
-//        System.out.println("busNum = " + uniqueNum);
-//        System.out.println("status = " + status);
-//        System.out.println("currentVelocity = " + currentVelocity);
-//        System.out.println("currentPassenger = " + currentPassenger);
-//    }
-    //버스 상태 변경
-    public void changeStatus(String inputstatus) {
-        System.out.println("==== 버스 상태 변경 ====");
-        if (inputstatus.equals("차고지행")) {
-            status = "차고지행";
-            System.out.println("이 버스는 " + status + "입니다.");
-        } else if (inputstatus.equals("운행중")) {
-            status = "운행중";
-            System.out.println("이 버스는 " + status + "입니다.");
-        }
-    }
-
     // 주유량 변경
     public void changeFuel(int gas) {
         System.out.println("==== 주유량 변경 ====");
@@ -74,21 +50,5 @@ public class Bus extends PublicTransprort {
             currentPassenger -= passenger;
         }
     }
-    // 속도변경
-//    public void changeVelocity(int gas, int Velocity){
-//        System.out.println("==== 속도 변경 ====");
-//        while ( gas >= 10 ){
-//            status = "운행";
-//            if ( gas < 10 ) {
-//                System.out.println("주유량을 확인해 주세요");
-//            }
-//        }
-//        if (Velocity > 0) {
-//            currentVelocity += Velocity;
-//        } else {
-//            currentVelocity -= Velocity;
-//        }
-//        System.out.println("currentVelocity = " + currentVelocity);
-
 }
 
