@@ -28,14 +28,15 @@ public class Main {
 
         System.out.println("첫 번째 택시 고유 번호는 "+mytaxi1.uniqueNum+"입니다.");
         System.out.println("두 번째 택시 고유 번호는 "+mytaxi2.uniqueNum+"입니다.");
+        mytaxi1.status = "일반";
 
         mytaxi1.taxiInfo();
         mytaxi1.plusPassenger(2, "서울역", 2);
         mytaxi1.changeFuel(-80);
-        mytaxi1.paid();
+        mytaxi1.paid(2);
         mytaxi1.plusPassenger(5);
         mytaxi1.plusPassenger(3, "구로디지털단지역", 12);
-        mytaxi1.paid();
+        mytaxi1.paid(12);
         mytaxi1.changeFuel(-20);
     }
 }
