@@ -6,8 +6,10 @@ public class Main {
         Bus mybus1 = new Bus(1234); // 객체 생성 시 데이터를 바로 입력 받음
         Bus mybus2 = new Bus(5678);
 
-//        mybus1.busNum = 1234;
-//        mybus2.busNum = 5678;
+        mybus1.maxPassenger = 30;
+        mybus1.currentFuel = 100;
+        mybus1.price = 1000;
+
         System.out.println("첫 번째 버스 고유 번호는 "+mybus1.busNum+"입니다.");
         System.out.println("두 번째 버스 고유 번호는 "+mybus2.busNum+"입니다.");
         // 승객 탑승
@@ -25,6 +27,10 @@ public class Main {
         Taxi mytaxi1 = new Taxi(1111);
         Taxi mytaxi2 = new Taxi(2222);
 
+        mytaxi1.maxPassenger = 4;
+        mytaxi1.currentFuel = 100;
+        mytaxi1.price = 3000;
+
         System.out.println("첫 번째 택시 고유 번호는 "+mytaxi1.taxiNum+"입니다.");
         System.out.println("두 번째 택시 고유 번호는 "+mytaxi2.taxiNum+"입니다.");
 
@@ -36,6 +42,5 @@ public class Main {
         mytaxi1.plusPassenger(3, "구로디지털단지역", 12);
         mytaxi1.paid();
         mytaxi1.changeFuel(-20);
-
     }
 }

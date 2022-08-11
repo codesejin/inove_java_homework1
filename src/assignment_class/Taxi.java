@@ -1,13 +1,11 @@
 package assignment_class;
 
-public class Taxi {
-    int maxPassenger = 4;
+public class Taxi extends PublicTransprort{
+//    int maxPassenger = 4;
     int currentPassenger;
-    int price = 3000;
     int perprice = 1000;
     int taxiNum;
-    int currentFuel = 100;
-    int currentVelocity;
+//    int currentFuel = 100;
     String status = "일반";
     int totalpaid;
 

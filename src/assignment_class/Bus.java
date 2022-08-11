@@ -1,11 +1,10 @@
 package assignment_class;
 
-public class Bus {
-    int maxPassenger = 30;
+public class Bus extends PublicTransprort{
+//    int maxPassenger = 30;
     int currentPassenger;
-    int price = 1000;
     int busNum;
-    int currentFuel = 100;
+//    int currentFuel = 100;
     int currentVelocity;
     String status = "운행";
 
