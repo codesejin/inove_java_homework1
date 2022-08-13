@@ -1,6 +1,6 @@
 package assignment_class;
 
-public class Taxi extends PublicTransprort{
+public class Taxi extends Transprort {
     int currentPassenger;
     int perprice = 1000;
     int totalpaid;
@@ -12,9 +12,15 @@ public class Taxi extends PublicTransprort{
                 maxPassenger,
                 price,
                 currentVelocity,
-                chagneVelocity,
-                status);
+                chagneVelocity
+                );
     }
+
+    @Override
+    void changeStatus(String inputstatus) {
+
+    }
+
     //택시상태
     public void taxiInfo () {
         System.out.println("현재 택시의 주유량은 " + currentFuel + "입니다.");

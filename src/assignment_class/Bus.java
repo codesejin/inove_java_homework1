@@ -1,17 +1,33 @@
 package assignment_class;
 
-public class Bus extends PublicTransprort {
-    int currentPassenger;
-
+public class Bus extends Transprort {
+    int currentPassenger; // 선언..
+    //constant 클래스안에절대변하지 않을값을 넣어줌..색깔등등
+    //static 메모리올라가는 위치가달라짐..(스프링에서 많이쓰임)!!!
     Bus(int uniqueNum, int currentFuel, int maxPassenger, int price, int currentVelocity, int chagneVelocity,String status) {
         super(uniqueNum,
                 currentFuel,
                 maxPassenger,
                 price,
                 currentVelocity,
-                chagneVelocity,
-                status);
+                chagneVelocity);
+        changeStatus(status);
+        // 바뀌지 않는 값의 용도로 생성자를 사용
+
     }
+
+    @Override
+    void changeStatus(String status) {
+        System.out.println("==== 버스 상태 변경 ====");
+        if (status.equals("차고지행")) {
+            super.status = "차고지행";
+            System.out.println("이 버스는 " + status + "입니다.");
+        } else if (status.equals("운행중")) {
+            super.status = "운행중";
+            System.out.println("이 버스는 " + status + "입니다.");
+        }
+    }
+
     // 주유량 변경
     public void changeFuel(int gas) {
         System.out.println("==== 주유량 변경 ====");
